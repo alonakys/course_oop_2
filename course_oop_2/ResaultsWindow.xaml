@@ -1,0 +1,27 @@
+﻿<Window x:Class="course_oop_2.ResaultsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:course_oop_2"
+        mc:Ignorable="d"
+        Title="Resaults" Height="350" Width="288" ResizeMode="NoResize" Background="#FFAFD769" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Label Content="YOUR SCORE" HorizontalAlignment="Left" Height="26" Margin="98,10,0,0" VerticalAlignment="Top" Width="78"/>
+
+        <ListView x:Name="UserList" ItemsSource="{Binding User.userList}" HorizontalAlignment="Left" Height="200" Margin="62,65,0,0" VerticalAlignment="Top" Width="171" Background="#FF80A42E">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name" Width="90"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Score}" Header="Score" Width="70"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Height="27" Margin="210,282,0,0" VerticalAlignment="Top" Width="62" Click="exit_Click"/>
+        <Button x:Name="userChange" Content="Change user" HorizontalAlignment="Left" Height="27" Margin="86,282,0,0" VerticalAlignment="Top" Width="78" Click="userChange_Click"/>
+        <Button x:Name="playAgain" Content="Play again" HorizontalAlignment="Left" Height="29" Margin="10,280,0,0" VerticalAlignment="Top" Width="62" Click="playAgain_Click"/>
+        <Label x:Name="scoreValue" Content="" HorizontalAlignment="Left" Height="29" Margin="109,36,0,0" VerticalAlignment="Top" Width="55"/>
+
+    </Grid>
+</Window>

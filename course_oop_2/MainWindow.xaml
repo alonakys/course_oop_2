@@ -1,0 +1,38 @@
+﻿<Window x:Class="course_oop_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:course_oop_2"
+        mc:Ignorable="d"
+    Title="MainWindow"  Height="671.539" Width="1150.769" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Rectangle x:Name="mainBackground" HorizontalAlignment="Left" Height="643" Stroke="Black" VerticalAlignment="Top" Width="1145"/>
+
+        <Button x:Name="information" Content="Rules" Height="30" Width="60" Background="#FF00CECE" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,10,10,10" RenderTransformOrigin="0.5,0.5" BorderThickness="0">
+            <Button.ToolTip>
+                <ToolTip>
+                    <TextBlock>
+                        Rules
+                        <LineBreak />
+                        You need to catch falling things in the food basket.
+                        <LineBreak />
+                        If you catch a red food, you will get an additional 10 points
+                        <LineBreak />
+                        and +2 seconds.
+                        <LineBreak />
+                        If you catch a yellow food, you will get 20 points and 
+                        <LineBreak />
+                        if you catch a green food,you will get 40 points.
+                        <LineBreak />
+                        If a toy gets into the basket, the score will be reduced by 10 points
+                    </TextBlock>
+
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+        <Button Content="Start"  HorizontalAlignment="Left" Height="86" Margin="430,478,0,0" VerticalAlignment="Top" Width="274" Click="Button_Click" FontSize="24" Background="#FFAFD769" BorderBrush="#FF62811D"/>
+
+    </Grid>
+</Window>

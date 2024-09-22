@@ -1,0 +1,17 @@
+﻿<Window x:Class="course_oop_2.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:course_oop_2"
+        mc:Ignorable="d"
+        Title="Game" Height="671.539" Width="1150.769" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Canvas Name="myCanvas" Focusable="True" MouseMove="Canvas_MouseMove">
+            <Rectangle x:Name="gameplace" HorizontalAlignment="Left" Height="643" VerticalAlignment="Top" Width="1145" Opacity="0.9" Canvas.Left="-2"/>
+            <Rectangle Tag="playerRect" Name="player1" Width="424" Height="249" Canvas.Left="334" Canvas.Top="394" Opacity="0.8"/>
+
+        </Canvas>
+        <Button Content="Finish" HorizontalAlignment="Left" Height="33" Margin="1093,10,0,0" VerticalAlignment="Top" Width="40" Click="Button_Click"/>
+    </Grid>
+</Window>
