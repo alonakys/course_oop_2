@@ -63,10 +63,6 @@ namespace course_oop_2
 
             }
 
-            public void Start()
-            {
-
-            }
         }
         private void Canvas_MouseMove(object sender, MouseEventArgs e)
         {

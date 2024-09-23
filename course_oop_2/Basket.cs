@@ -23,15 +23,5 @@ namespace course_oop_2
             Imagee.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/pngeggRight.png"));
         }
 
-
-        public bool IsFull()
-        {
-            return things.Count >= Capacity;
-        }
-
-        public void AddThing(Thing Thing)
-        {
-            things.Add(Thing);
-        }
     }
 }
