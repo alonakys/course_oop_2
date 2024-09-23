@@ -9,7 +9,8 @@
     <Grid>
         <Rectangle x:Name="mainBackground" HorizontalAlignment="Left" Height="643" Stroke="Black" VerticalAlignment="Top" Width="1145"/>
 
-        <Button x:Name="information" Content="Rules" Height="30" Width="60" Background="#FF00CECE" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,10,10,10" RenderTransformOrigin="0.5,0.5" BorderThickness="0">
+        <Button x:Name="information" Content="Rules" Height="30" Width="60" Background="#FF00CECE" FontSize="20" HorizontalAlignment="Right"
+                VerticalAlignment="Top" Margin="10,10,10,10" RenderTransformOrigin="0.5,0.5" BorderThickness="0">
             <Button.ToolTip>
                 <ToolTip>
                     <TextBlock>
@@ -32,7 +33,7 @@
             </Button.ToolTip>
         </Button>
 
-        <Button Content="Start"  HorizontalAlignment="Left" Height="86" Margin="430,478,0,0" VerticalAlignment="Top" Width="274" Click="Button_Click" FontSize="24" Background="#FFAFD769" BorderBrush="#FF62811D"/>
+        <Button Content="Start"  HorizontalAlignment="Left" Height="86" Margin="430,478,0,0" VerticalAlignment="Top" Width="274" Click="Button_Click" FontSize="24" Background="#FFAFD769"/>
 
     </Grid>
 </Window>

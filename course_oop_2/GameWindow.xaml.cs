@@ -238,7 +238,6 @@ namespace course_oop_2
 
         private Thing CreateThing(Objects objectType)
         {
-            //жалке подобіє поліморфізма
             switch (objectType)
             {
                 case Objects.Apple:
